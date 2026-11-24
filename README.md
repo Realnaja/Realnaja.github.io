@@ -4,11 +4,11 @@ Welcome to my personal portfolio!
 
 I am a Computer Science student passionate about technology, software development, and artificial intelligence. I enjoy learning new skills, exploring ideas, and building projects that help me grow as a developer.
 
-🌐 Live Website
+Live Website
 
-Visit My Portfolio
+https://realnaja.github.io/
 
-👩🏻‍💻 About My Portfolio
+About My Portfolio
 
 This website showcases my academic journey, technical skills, projects, and achievements as a Computer Science student.
 
