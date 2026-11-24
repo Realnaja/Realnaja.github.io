@@ -1,0 +1,78 @@
+
+/* =================================
+   REVEAL ANIMATIONS
+================================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =================================
+   FLOATING EFFECTS
+================================= */
+
+.floating-note {
+    animation: float 4s ease-in-out infinite;
+}
+
+.note-two {
+    animation-delay: 1.5s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* =================================
+   PROFILE IMAGE
+================================= */
+
+.profile-image {
+    transition: transform 0.5s ease;
+}
+
+.hero-image-wrapper:hover .profile-image {
+    transform: scale(1.02);
+}
+
+
+/* =================================
+   ACCESSIBILITY
+================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+}

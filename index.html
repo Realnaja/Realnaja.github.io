@@ -1,150 +1,564 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="description" content="A Computer Science student's personal portfolio, projects, skills, and learning journey.">
+
+    <title>My Portfolio | Computer Science Student</title>
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
+
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-content">
-            <a href="#" class="logo">Your Name</a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">My<span>Portfolio.</span></a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#journey" class="nav-link">Journey</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link contact-link">Contact</a></li>
             </ul>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
-            <p class="tagline">Computer Science Student | Aspiring Developer</p>
-            <p class="intro">Welcome to my portfolio! I'm passionate about creating innovative solutions.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Contact Me</a>
-            </div>
-        </div>
-        <div class="hero-image">
-            <img src="images/profile.jpg" alt="Your Name">
-        </div>
-    </section>
+        </nav>
+    </header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>Hello! I'm a Computer Science student at [Your University]. I'm currently in my [Year] year, focusing on [Your Interests].</p>
-                <p>My journey in tech began when [Your Story]. Since then, I've been constantly learning.</p>
-            </div>
-            <div class="about-info">
-                <div class="info-item">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>BSc Computer Science</span>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Jeddah, Saudi Arabia</span>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2 class="section-title">My Skills</h2>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h3><i class="fa fa-code"></i> Programming Languages</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Java</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">C++</span>
-                    <span class="skill-tag">SQL</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">HTML5</span>
-                    <span class="skill-tag">CSS3</span>
-                    <span class="skill-tag">React</span>
-                    <span class="skill-tag">Node.js</span>
-                </div>
-            </div>
-        </div>
-    </section>
+    <main>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2 class="section-title">My Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/project1.jpg" alt="Project 1">
-                </div>
-                <div class="project-info">
-                    <h3>Project Title 1</h3>
-                    <p>A brief description of your project.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Flask</span>
+        <!-- HOME SECTION -->
+        <section id="home" class="hero section">
+
+            <div class="container hero-grid">
+
+                <div class="hero-content reveal">
+
+                    <p class="eyebrow">
+                        COMPUTER SCIENCE STUDENT
+                    </p>
+
+                    <h1>
+                        Exploring technology,
+                        <span>one idea at a time.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Hello! I'm a Computer Science student at Effat University.
+                        I'm interested in technology, problem-solving, and
+                        creating projects while continuously learning and growing.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            Explore My Projects
+                        </a>
+
+                        <a href="#about" class="btn btn-secondary">
+                            Get to Know Me
+                        </a>
                     </div>
-                    <div class="project-links">
-                        <a href="#"><i class="fab fa-github"></i> Code</a>
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+
+                    <div class="hero-note">
+                        <span class="status-dot"></span>
+                        Always learning. Always exploring.
                     </div>
+
                 </div>
-            </div>
-            <!-- Add more project cards as needed -->
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-content">
-            <p>I'm currently looking for opportunities!</p>
-            <div class="contact-methods">
-                <a href="mailto:your.email@example.com" class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>your.email@example.com</span>
-                </a>
-                <a href="https://linkedin.com/in/yourprofile" class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <span>LinkedIn</span>
-                </a>
-                <a href="https://github.com/yourusername" class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </a>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
+                <div class="hero-visual reveal">
+
+                    <div class="hero-image-wrapper">
+
+                        <div class="decorative-circle circle-one"></div>
+                        <div class="decorative-circle circle-two"></div>
+
+                        <img
+                            src="images/profile.jpg"
+                            alt="My profile photo"
+                            class="profile-image"
+                        >
+
+                    </div>
+
+                    <div class="floating-note note-one">
+                        <span>✦</span> Learning
+                    </div>
+
+                    <div class="floating-note note-two">
+                        <span>⌘</span> Creating
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-bottom container">
+                <span>SCROLL TO EXPLORE</span>
+                <span class="scroll-line"></span>
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section about-section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="eyebrow">A LITTLE ABOUT ME</p>
+                    <h2>Getting to know <span>my journey.</span></h2>
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-main reveal">
+
+                        <p class="large-text">
+                            I'm a Computer Science student who enjoys
+                            discovering how technology works and how it
+                            can be used to solve real-world problems.
+                        </p>
+
+                        <p>
+                            Throughout my university journey, I've been
+                            exploring different areas of computing,
+                            developing my programming skills, and working
+                            on projects that help me connect theory with practice.
+                        </p>
+
+                        <p>
+                            I'm still discovering the areas of Computer Science
+                            that interest me most, and I see every course,
+                            project, and challenge as an opportunity to grow.
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-details reveal">
+
+                        <div class="detail-card">
+                            <span class="detail-number">01</span>
+                            <div>
+                                <h3>Education</h3>
+                                <p>Effat University</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-card">
+                            <span class="detail-number">02</span>
+                            <div>
+                                <h3>Major</h3>
+                                <p>Computer Science</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-card">
+                            <span class="detail-number">03</span>
+                            <div>
+                                <h3>Interests</h3>
+                                <p>Programming, AI, and Technology</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-card">
+                            <span class="detail-number">04</span>
+                            <div>
+                                <h3>Currently</h3>
+                                <p>Learning, experimenting, and building</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section skills-section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="eyebrow">WHAT I'M LEARNING</p>
+                    <h2>My <span>skills & tools.</span></h2>
+                    <p>
+                        Technologies and concepts I've been exploring
+                        throughout my Computer Science journey.
+                    </p>
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <article class="skill-card reveal">
+                        <div class="skill-icon">⌨</div>
+                        <h3>Programming Languages</h3>
+                        <p>Languages I've used while learning programming
+                            and solving problems.</p>
+
+                        <div class="skill-tags">
+                            <span>Java</span>
+                            <span>Python</span>
+                        </div>
+                    </article>
+
+
+                    <article class="skill-card reveal">
+                        <div class="skill-icon">⌘</div>
+                        <h3>Web Development</h3>
+                        <p>Technologies used to create and structure
+                            web pages.</p>
+
+                        <div class="skill-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </article>
+
+
+                    <article class="skill-card reveal">
+                        <div class="skill-icon">⚙</div>
+                        <h3>Tools & Platforms</h3>
+                        <p>Tools that support my coding and development
+                            workflow.</p>
+
+                        <div class="skill-tags">
+                            <span>VS Code</span>
+                            <span>Git</span>
+                            <span>GitHub</span>
+                        </div>
+                    </article>
+
+
+                    <article class="skill-card reveal">
+                        <div class="skill-icon">✧</div>
+                        <h3>Computer Science Concepts</h3>
+                        <p>Topics I've been studying and applying
+                            in my coursework.</p>
+
+                        <div class="skill-tags">
+                            <span>Algorithms</span>
+                            <span>Artificial Intelligence</span>
+                            <span>Discrete Mathematics</span>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="section-footnote">
+                    My skills are continuously developing as I learn
+                    and gain more practical experience.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section projects-section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="eyebrow">WHAT I'VE BEEN WORKING ON</p>
+                    <h2>Projects & <span>experiments.</span></h2>
+                    <p>
+                        A collection of university projects and personal
+                        work that reflect what I've been learning.
+                    </p>
+                </div>
+
+
+
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project cards are generated by projects.js -->
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LEARNING JOURNEY SECTION -->
+        <section id="journey" class="section journey-section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="eyebrow">GROWING STEP BY STEP</p>
+                    <h2>My learning <span>journey.</span></h2>
+                    <p>
+                        Every new subject and experience is another
+                        step in my development.
+                    </p>
+                </div>
+
+
+                <div class="timeline">
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+
+                        <div class="timeline-content">
+                            <span class="timeline-label">UNIVERSITY</span>
+                            <h3>Exploring Computer Science</h3>
+                            <p>
+                                Building a foundation in computing,
+                                programming, mathematics, and
+                                problem-solving.
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+
+                        <div class="timeline-content">
+                            <span class="timeline-label">PROGRAMMING</span>
+                            <h3>Developing Practical Skills</h3>
+                            <p>
+                                Practicing programming through coursework
+                                and projects using languages such as
+                                Java and Python.
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+
+                        <div class="timeline-content">
+                            <span class="timeline-label">EXPLORATION</span>
+                            <h3>Discovering New Technologies</h3>
+                            <p>
+                                Exploring artificial intelligence,
+                                software development, and other
+                                areas of technology.
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+
+                        <div class="timeline-content">
+                            <span class="timeline-label">WHAT'S NEXT</span>
+                            <h3>Learning Through Building</h3>
+                            <p>
+                                Continuing to improve my skills,
+                                work on new projects, and discover
+                                future opportunities.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ACHIEVEMENTS SECTION -->
+        <section id="achievements" class="section achievements-section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="eyebrow">ACADEMIC RECOGNITION</p>
+                    <h2>Achievements & <span>Certificates..</span></h2>
+                    <p>
+                        Academic recognition and certificates earned through
+                        university and professional learning experiences.
+                    </p>
+                </div>
+
+
+                <div class="achievement-grid">
+                    
+                    <!-- President's List -->
+                    <article class="achievement-card reveal">
+
+                        <div class="achievement-icon">✦</div>
+
+                        <div class="achievement-info">
+                            <span class="achievement-label">
+                                ACADEMIC RECOGNITION
+                            </span>
+
+                            <h3>President's List Certificate</h3>
+
+                            <p>
+                                Recognized by Effat College of Engineering
+                                for the academic year 2025–2026.
+                            </p>
+
+                            <a
+                                href="assets/certificates/EFFAT UNVERSITY.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-link"
+                            >
+                                View Certificate ↗
+                            </a>
+                        </div>
+
+                    </article>
+                    
+                    
+                    <!-- IBM Datathon -->
+                    <article class="achievement-card reveal">
+
+                        <div class="achievement-icon">✧</div>
+
+                        <div class="achievement-info">
+                            <span class="achievement-label">
+                                IBM Z Datathon 2026
+                            </span>
+
+                            <h3>IBM Z Datathon Certificate</h3>
+
+                            <p>
+                                Certificate of participation
+                                from IBM Z Datathon 2026.
+                            </p>
+
+                            <a href="assets/certificates/IBM Datathon 2026 Certificate.pdf"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="text-link"
+                               >
+                                View Certificate ↗
+                            </a>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section contact-section">
+
+            <div class="container">
+
+                <div class="contact-content reveal">
+
+                    <p class="eyebrow">LET'S CONNECT</p>
+
+                    <h2>
+                        Have an idea?
+                        <span>Let's connect.</span>
+                    </h2>
+
+                    <p>
+                        I'm always happy to connect with people,
+                        exchange ideas, and learn about new opportunities.
+                    </p>
+
+                    <a
+                        href="mailto:reeemasami2@gmail.com"
+                        class="btn btn-primary"
+                    >
+                        Send Me an Email ↗
+                    </a>
+
+                    <div class="social-links">
+
+                        <a
+                            href="https://www.linkedin.com/in/reema-abualnaja-43a789441/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn ↗
+                        </a>
+
+                        <a
+                            href="https://github.com/realnaja"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
     <footer class="footer">
-        <p>&copy; 2026 Your Name. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+
+        <div class="container footer-content">
+
+            <a href="#home" class="logo">My<span>Portfolio.</span></a>
+
+            <p>
+                Designed and built with curiosity.
+                © <span id="current-year"></span>
+            </p>
+
+            <a href="#home" class="back-to-top">
+                Back to top ↑
+            </a>
+
         </div>
+
     </footer>
 
+
+    <!-- JavaScript Files -->
+    <script src="js/projects.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 </html>
